@@ -51,4 +51,11 @@ See `./run` script for instructions.
 
 本地浏览器打开
 ![](.README_images/338be867.png)
+
+    var ws = new WebSocket('ws://36.134.56.149:36000/');
+    
+    ws.onmessage = function(event) {
+    console.log(event.data);
+    };
+
 ![](.README_images/5d9d978c.png)
