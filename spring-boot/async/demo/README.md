@@ -149,4 +149,4 @@ public class AsyncHasReturnImpl implements AsyncHasReturn {
 
 可见将异步service赋值给Future是不花时间的，不需要等待当前异步线程执行完毕。只有get()方法需要等待当前的异步线程执行完毕，几个异步线程是并行执行的。类似get()方法的还有isDone()，因为get()已经包括了isDone()，所以不需要使用isDone()做判断了。
 
-> 全部代码在： https://github.com/backendcloud/example/spring-boot/async/demo/README.md
+> 全部代码在： https://github.com/backendcloud/example/tree/master/spring-boot/async/demo/README.md
