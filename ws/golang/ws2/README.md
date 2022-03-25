@@ -1,0 +1,23 @@
+# 使用Gorilla Websockets –创建我们的服务器
+该websocket服务器将在常规的http服务器上实现。我们将net/http用于提供原始HTTP连接。
+现在，在中server.go，让我们编写常规的HTTP服务器，并添加一个socketHandler()函数来处理websocket逻辑。
+
+Gorilla的工作是转换原始HTTP连接进入一个有状态的websocket连接。
+这就是为什么使用struct调用Upgrader来帮助我们的原因。
+我们使用全局升级程序变量通过来帮助我们将任何传入的HTTP连接转换为websocket协议upgrader.Upgrade()。这将返回给我们*websocket.Connection，我们现在可以使用它来处理websocket连接。
+服务器使用读取消息，然后使用conn.ReadMessage()写入消息conn.WriteMessage()
+该服务器只是将所有传入的Websocket消息回显到客户端，因此这说明了如何将Websocket用于全双工通信。
+现在让我们转到的客户端。
+
+# 创建我们的客户端程序
+我们还将使用Gorilla编写客户端。这个简单的客户端将每隔1秒钟不断发出消息。如果我们的整个系统按预期工作，则服务器将接收间隔为1秒的数据包，并回复相同的消息。
+客户端还将具有接收传入的Websocket数据包的功能。在我们的程序中，我们将有一个单独的goroutine处理程序receiveHandler，用于侦听这些传入的数据包。
+
+如果您观察代码，您会发现我创建了两个通道done，interrupt用于receiveHandler()和之间的通信main()。
+我们使用无限循环使用select来通过通道监听事件。我们conn.WriteMessage()每秒钟写一条消息。如果激活了中断信号，则所有未决的连接都将关闭，并且我们可以正常退出！
+嵌套select是为了确保两件事：
+
+如果receiveHandler通道退出，则通道'done'将关闭。这是第一个case <-done条件
+如果'done'通道未关闭，则在1秒钟后会有超时，因此程序将在1秒钟超时后退出
+
+通过使用通道仔细处理所有情况select，您可以拥有一个可以轻松扩展的最小体系结构。
