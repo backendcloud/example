@@ -1,3 +1,14 @@
+项目特色：
+* 数据表有关联关系
+* 密码读写到数据库有解密加密过程
+* 用Cookie的"sessionid": sessionid 代替开源包jwt
+c.Cookie(&fiber.Cookie{
+		Name:     "sessionid",
+		Expires:  SessionExpires(),
+		Value:    session.Sessionid.String(),
+		HTTPOnly: true,
+	}
+
 # Go-Fiber Boilerplate
 Golang Rest API boilerplate built with GORM, Go-Fiber, and a PostgreSQL database. Running in a docker container with Hot Reload.
 
