@@ -31,3 +31,17 @@ func (c *OpenStackClient) GetServer(serverId string) (*servers.Server, error) {
 	}
 	return servers.Get(client, serverId).Extract()
 }
+
+func (c *OpenStackClient) ListServer() ([]servers.Server, error) {
+	client, err := c.GetServerProvider()
+	if err != nil {
+		return nil, err
+	}
+	opts := servers.ListOpts{}
+	pager, _ := servers.List(client, opts).AllPages()
+	allPages, err := servers.ExtractServers(pager)
+	if err != nil {
+		return nil, err
+	}
+	return allPages, nil
+}

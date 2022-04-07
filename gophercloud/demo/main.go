@@ -28,13 +28,19 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	//fmt.Println("server details: %s", createServerDetail)
+	//fmt.Printf("server details: %s\n", createServerDetail)
 
 	// get server by serverId
 	serverDetail, err := openStackClient.GetServer(createServerDetail.ID)
 	if err != nil {
 		panic(err)
 	}
-	fmt.Println("server details: %s", serverDetail)
+	fmt.Printf("server details: %s\n", serverDetail)
+
+	// list all servers
+	serverList, err := openStackClient.ListServer()
+	for _, s := range serverList {
+		fmt.Printf("server id: %s   server name: %s\n", s.ID, s.Name)
+	}
 
 }
