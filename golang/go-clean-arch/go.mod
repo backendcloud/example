@@ -10,7 +10,7 @@ require (
 	github.com/go-playground/universal-translator v0.16.0 // indirect
 	github.com/go-sql-driver/mysql v1.3.0
 	github.com/hashicorp/hcl v0.0.0-20180404174102-ef8a98b0bbce // indirect
-	github.com/labstack/echo v3.3.5+incompatible
+	github.com/labstack/echo v3.3.10+incompatible
 	github.com/labstack/gommon v0.0.0-20180426014445-588f4e8bddc6 // indirect
 	github.com/magiconair/properties v1.7.6 // indirect
 	github.com/mattn/go-colorable v0.0.9 // indirect
