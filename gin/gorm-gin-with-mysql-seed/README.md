@@ -10,6 +10,7 @@ After running the commands, you can find server started on `8080` .
 
 
 go的项目结构参考：
+```
 .
 ├── .air.conf                # Config file for air.
 ├── Dockerfile
@@ -38,3 +39,4 @@ go的项目结构参考：
 │   └── initializer          # Application configuration loader.
 ├── test                     # Additional external test apps and test data.
 └── web                      # Web application specific components: static web assets, server side templates and SPAs.
+```
