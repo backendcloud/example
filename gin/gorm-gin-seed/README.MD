@@ -1,3 +1,7 @@
+# 项目特色
+* 统一返回体
+* Models文件夹结构可以参考，所有实体放一个文件，对实体的数据库的增删改查一个实体一个文件
+
 # Api go simple
 It is a just simple RESTful API with Go using:
 1. **Gin Framework**
