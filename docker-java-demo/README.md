@@ -1,3 +1,8 @@
+docker hello-world 项目是一个最基础的 docker hello-world，包括：（以安卓开发做对比）
+* 制作镜像一个简单的利用redis中间件的java项目 - 如同开发一个安卓应用并打包
+* 上传自己的镜像到 docker hub（公共镜像仓库） - 上传到安卓市场
+* 任何人任何机器都可以拉取公共镜像仓库之前上传的镜像，并正常运行之前的java项目 - 任何手机都可以去安卓市场下载该手机应用
+
 # centos7 下安装docker
 
 ```bash
@@ -200,4 +205,4 @@ root@311a62f58693:/#
 [root@localhost tt]# 
 ```
 
-> docker-java-demo 项目源码放在 
+> docker-java-demo 项目源码放在 https://github.com/backendcloud/example/tree/master/docker-java-demo
