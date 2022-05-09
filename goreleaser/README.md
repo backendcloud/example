@@ -128,6 +128,7 @@ C:\Users\hanwei\Documents\GitHub\example\goreleaser>tree /F
     └─example_windows_arm_6
             example.exe
 ```
+
 > goreleaser demo项目源码放在： https://github.com/backendcloud/example/tree/master/goreleaser
 
 # 添加代码仓库的跟踪统计
