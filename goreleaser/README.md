@@ -1,15 +1,3 @@
----
-title: Github Releases 和 Github Badges
-readmore: true
-date: 2022-05-09 18:29:30
-categories: Tools
-tags:
-- goreleaser
-- Github
-- Metrics
-- Profile
-- Badges
----
 
 # goreleaser - 一键多平台打包工具
 
