@@ -1,7 +1,7 @@
 ---
 marp: true
 theme: uncover
-size: 4:3
+size: 16:9
 paginate: true
 header: up
 footer: down
@@ -11,10 +11,19 @@ footer: down
 sfa
 fsa
 ![bg brightness:1](kubefusionlogo.png)
----
 
 ---
-abc
-![bg left:45%](kubefusionlogo.png)
+
+# 2
+## 3
+### 4
+
+---
+
+![bg left:35%](kubefusionlogo.png)
+# Skylib
+* 重新python基础库
+* 基础库
+* build
 ---
 
