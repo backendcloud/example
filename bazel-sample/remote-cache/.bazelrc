@@ -1,0 +1,1 @@
+build --remote_cache=https://storage.googleapis.com/jun06t/bazel_remote_cache --google_default_credentials

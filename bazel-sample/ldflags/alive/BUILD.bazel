@@ -1,0 +1,12 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "alive",
+    srcs = ["alive.go"],
+    importpath = "github.com/jun06t/bazel-sample/ldflags/alive",
+    visibility = ["//visibility:public"],
+    x_defs = {
+        "BuildVersion": "{GIT_COMMIT}",
+        "Timestamp": "{DATE}",
+    },
+)
