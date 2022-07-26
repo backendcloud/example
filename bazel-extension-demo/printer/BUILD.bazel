@@ -1,0 +1,6 @@
+load("//printer:printer.bzl","printer")
+#load("@src//printer:printer.bzl","printer")
+
+printer(
+    name = "printer",
+)

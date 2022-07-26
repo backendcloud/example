@@ -1,0 +1,8 @@
+load("//small:miniature.bzl","miniature")
+
+miniature(
+    name = "logo_miniature",
+    src = "image.png",
+)
+
+
