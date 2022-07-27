@@ -20,14 +20,14 @@ container_image(
     base = "@distroless_linux_amd64//image",
     entrypoint = ["/cmd"],
     files = [":cmd"],
-    repository = "jun06t",
+    repository = "backendcloud/bazel-sample-cmd",
 )
 
 container_push(
     name = "image-push",
     format = "Docker",
     image = ":image",
-    registry = "index.docker.io",
-    repository = "jun06t/bazel-sample-cmd",
+    registry = "localhost:5000",
+    repository = "backendcloud/bazel-sample-cmd",
     tag = "$(IMAGE_TAG)",
 )
