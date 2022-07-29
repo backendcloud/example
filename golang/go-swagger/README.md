@@ -1,3 +1,4 @@
+ ```bash
  ✘ ⚡ root@backendcloud  ~/t3  go install  github.com/swaggo/swag/cmd/swag 
  ⚡ root@backendcloud  ~/t3  swag init -g main.go                                
 2022/07/29 16:49:49 Generate swagger docs....
@@ -112,3 +113,4 @@ info:
   version: 1.0`
 paths: {}
 swagger: "2.0"
+```
