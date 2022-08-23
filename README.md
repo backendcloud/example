@@ -6,6 +6,12 @@
 
 [go-reflect](https://github.com/backendcloud/example/tree/master/golang/go-reflect)
 
+[go-routine-channel](https://github.com/backendcloud/example/tree/master/golang/go-routine-channel)
+
+[go-routine-context](https://github.com/backendcloud/example/tree/master/golang/go-routine-context)
+
+[go-routines-context](https://github.com/backendcloud/example/tree/master/golang/go-routines-context)
+
 [cobra-example](https://github.com/backendcloud/example/tree/master/golang/cobra-example)
 
 [go1.18-workspace](https://github.com/backendcloud/example/tree/master/golang/go1.18-workspace)
