@@ -153,3 +153,7 @@
 ### MQTT
 
 [mqtt](https://github.com/backendcloud/example/tree/master/mqtt/golang-client)
+
+### 云原生开发
+
+[client-go-discovery](https://github.com/backendcloud/example/tree/master/cloud-native/client-go-discovery)
