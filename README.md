@@ -157,3 +157,5 @@
 ### 云原生开发
 
 [client-go-discovery](https://github.com/backendcloud/example/tree/master/cloud-native/client-go-discovery)
+
+[client-go-rest](https://github.com/backendcloud/example/tree/master/cloud-native/client-go-rest)
