@@ -149,4 +149,4 @@ func (c *pods) List(ctx context.Context, opts metav1.ListOptions) (result *v1.Po
 }
 ```
 
-实际上 func (c *pods) List(ctx context.Context, opts metav1.ListOptions) (result *v1.PodList, err error) 方法就是调用上面讲到的 restclient 客户端。 参考 {% post_link client-go-3 %}
+实际上 func (c *pods) List(ctx context.Context, opts metav1.ListOptions) (result *v1.PodList, err error) 方法就是调用上面讲到的 restclient 客户端。 参考 https://github.com/backendcloud/example/tree/master/cloud-native/client-go-rest
