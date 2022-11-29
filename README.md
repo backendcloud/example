@@ -159,3 +159,9 @@
 [client-go-discovery](https://github.com/backendcloud/example/tree/master/cloud-native/client-go-discovery)
 
 [client-go-rest](https://github.com/backendcloud/example/tree/master/cloud-native/client-go-rest)
+
+[client-go-clientset](https://github.com/backendcloud/example/tree/master/cloud-native/client-go-clientset)
+
+### Spring Boot 3
+
+[Spring Boot 3 hello-world](https://github.com/backendcloud/example/tree/master/spring-boot3/demo-maven)
