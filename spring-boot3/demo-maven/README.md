@@ -1,4 +1,4 @@
-
+https://github.com/backendcloud/backendcloud.github.io/blob/master/images/springboot3/2022-11-29-09-17-59.png?raw=true
 
 Spring Boot 3.0 五天前（2022年11月24日）发布了，变化很大，基于spring6.0，spring6.0是Spring下一个未来十年的新开端。
 
