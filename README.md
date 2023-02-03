@@ -30,6 +30,8 @@
 
 [golang实现的聊天系统](https://github.com/backendcloud/example/tree/master/golang/8小时转职Golang工程师/GolangStudy/14-golang-IM-System)
 
+[golang协程池](https://github.com/backendcloud/example/tree/master/worker_pool)
+
 ### Java
 
 [spring-boot异步](https://github.com/backendcloud/example/tree/master/spring-boot/async/demo)
